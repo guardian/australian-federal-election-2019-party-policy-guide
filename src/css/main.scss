@@ -24,6 +24,18 @@ $c-bar: #D4D9DF;
 // Uncomment for full screen (including immersive article main media)
 // @import "fullscreen";
 
+.content__meta-container {
+  display: none;
+}
+
+
+  .content--interactive .content__labels {
+      margin-left: 0;
+      min-height: 50px;
+  }
+
+
+
 .main {
      margin: auto;
      min-height: 100vh;
@@ -37,6 +49,91 @@ $c-bar: #D4D9DF;
         padding: 20px;
     }
 
+    .topline {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .credits {
+        font-family: "Guardian Text Egyptian Web",Georgia,serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 600;
+        color: #c70000;
+    }
+
+    .topline {
+
+      .btns-share {
+        margin-top: 10px;
+      }
+
+      button {
+        color: inherit;
+        font: inherit;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+      button {
+        overflow: visible;
+      }
+      button {
+        text-transform: none;
+      }
+      button {
+        -webkit-appearance: button;
+        cursor: pointer;
+      }
+      button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+      ::-moz-selection {
+        background: #ffe500;
+        color: #121212;
+      }
+      ::selection {
+        background: #ffe500;
+        color: #121212;
+      }
+      button {
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+      }
+
+      .btns-share .btn-tt {
+        background: #bdbdbd url(https://interactive.guim.co.uk/2016/aus-election/results-interactive/1467525463857/assets/imgs/twitterIcon.svg) no-repeat center center;
+      }
+      .btns-share .btn-tt:hover {
+        background-color: #03b3ee;
+      }
+      .btns-share .btn-fb {
+        background: #bdbdbd url(https://interactive.guim.co.uk/2016/aus-election/results-interactive/1467525463857/assets/imgs/facebookIcon.svg) no-repeat center center;
+      }
+      .btns-share .btn-fb:hover {
+        background-color: #3067a3;
+      }
+      .btns-share button {
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 9000px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: button;
+        text-transform: none;
+        overflow: visible;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+      }
+      
+    }
 
 }
 
